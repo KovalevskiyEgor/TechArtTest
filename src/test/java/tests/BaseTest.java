@@ -1,3 +1,5 @@
+package tests;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -11,6 +13,7 @@ abstract public class BaseTest {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.headless= false;
+        Configuration.reportsFolder = "src/test/screenshots";
     }
 
     @BeforeMethod
